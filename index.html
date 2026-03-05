@@ -6,118 +6,102 @@
     <title>Oparajita Overseas | RL-1318</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* দ্রুত লোড হওয়ার জন্য প্রয়োজনীয় কিছু বেসিক স্টাইল এখানেই যোগ করা হয়েছে */
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            background: #000;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        .badge {
-            background: #e74c3c;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
+
     <nav>
-        <div class="logo">Oparajita Overseas <small>RL-1318</small></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#jobs">Jobs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-plane-departure"></i> Oparajita Overseas <small>RL-1318</small>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#jobs">জব সার্কুলার</a></li>
+                <li><a href="tel:+8801970945555" class="nav-call-btn"><i class="fas fa-phone-alt"></i> কল করুন</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>আপনার বৈদেশিক কর্মসংস্থানের বিশ্বস্ত অংশীদার</h1>
-            <p>সততা ও স্বচ্ছতার সাথে আমরা আপনার স্বপ্ন পূরণ করি।</p>
-            <a href="https://forms.gle/1Xbp9F57MXqiTkP5A" class="btn">Apply Now</a>
+    <header id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="top-tag">গভর্নমেন্ট অনুমোদিত রিক্রুটিং এজেন্সি</span>
+                <h1>বৈদেশিক কর্মসংস্থানের <span class="highlight">বিশ্বস্ত প্রতিষ্ঠান</span></h1>
+                <p>Oparajita Overseas (RL-1318) এর সাথে আপনার বিদেশ যাত্রার প্রতিটি ধাপ হোক স্বচ্ছ এবং নিরাপদ।</p>
+                <div class="hero-btns">
+                    <a href="tel:+8801970945555" class="btn call-btn">
+                        <i class="fas fa-phone-alt"></i> কল দিন
+                    </a>
+                    <a href="https://wa.me/8801970945555" class="btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপ
+                    </a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <div class="video-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F901312212756034%2F&show_text=false&width=476&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="jobs" class="jobs">
-        <h2>বর্তমান নিয়োগ বিজ্ঞপ্তিসমূহ</h2>
-        <div class="job-grid">
-            
-            <div class="job-card">
-                <span class="badge">Serbia</span>
-                <h3>সার্বিয়া (কোকা-কোলা কোম্পানি)</h3>
-                <p><strong>পদ:</strong> ইলেকট্রিশিয়ান / হেল্পার</p>
-                <p><strong>বেতন:</strong> ৫০০ - ৬৫০ ইউরো</p>
-                <p><strong>ডিউটি:</strong> ৮ ঘণ্টা + ওটি</p>
-                <p><strong>সুবিধা:</strong> থাকা-খাওয়া কোম্পানি বহন করবে</p>
-                <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdrQXgU2qf3GLPM1xRSZKEF75_HoRxxU5Cp2jidb_2b3ozYNg/viewform?usp=header'">আবেদন করুন</button>
-            </div>
-
-            <div class="job-card">
-                <span class="badge">Laos</span>
-                <h3>লাওস (চায়না হুনান কনস্ট্রাকশন)</h3>
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title">চলমান নিয়োগ বিজ্ঞপ্তিসমূহ</h2>
+            <div class="job-grid">
                 
-                <div class="video-wrapper">
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1284483833494197%2F&show_text=false&width=476&t=0" 
-                        scrolling="no" frameborder="0" allowfullscreen="true" 
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                    </iframe>
+                <div class="job-card">
+                    <div class="badge">Russia</div>
+                    <h3>রাশিয়া (ইলেকট্রনিক্স অ্যাসেম্বলি)</h3>
+                    <div class="card-video">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F901312212756034%2F&show_text=false&width=476&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <p><strong>পদ:</strong> অ্যাসেম্বলি ওয়ার্কার</p>
+                    <p><strong>বেতন:</strong> ১ লক্ষ ২ হাজার টাকা</p>
+                    <a href="https://forms.gle/1Xbp9F57MXqiTkP5A" class="apply-btn">আবেদন করুন</a>
                 </div>
 
-                <p><strong>পদ:</strong> জেনারেল ওয়ার্কার</p>
-                <p><strong>বেতন:</strong> ৪৫০ - ৫০০ USD</p>
-                <p><strong>চুক্তি:</strong> ২ বছর (নবায়নযোগ্য)</p>
-                <p><strong>ডিউটি:</strong> ০৮ ঘণ্টা + ওটি</p>
-                <button onclick="window.location.href='https://forms.gle/1Xbp9F57MXqiTkP5A'">আবেদন করুন</button>
-            </div>
-
-            <div class="job-card">
-                <span class="badge">Russia</span>
-                <h3>রাশিয়া (ইলেকট্রনিক্স অ্যাসেম্বলি)</h3>
-
-                <div class="video-wrapper">
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F901312212756034%2F&show_text=false&width=476&t=0" 
-                        scrolling="no" frameborder="0" allowfullscreen="true" 
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                    </iframe>
+                <div class="job-card">
+                    <div class="badge">Laos</div>
+                    <h3>লাওস (চায়না হুনান কনস্ট্রাকশন)</h3>
+                    <div class="card-video">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1284483833494197%2F&show_text=false&width=476&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <p><strong>পদ:</strong> জেনারেল ওয়ার্কার</p>
+                    <p><strong>বেতন:</strong> ৪৫০ - ৫০০ USD</p>
+                    <a href="https://forms.gle/1Xbp9F57MXqiTkP5A" class="apply-btn">আবেদন করুন</a>
                 </div>
 
-                <p><strong>পদ:</strong> অ্যাসেম্বলি ওয়ার্কার</p>
-                <p><strong>বেতন:</strong> ১ লক্ষ ২ হাজার টাকা</p>
-                <p><strong>বয়স:</strong> ১৯ থেকে ৪০ বছর</p>
-                <p><strong>সুবিধা:</strong> থাকা-খাওয়া সম্পূর্ণ ফ্রি</p>
-                <button onclick="window.location.href='https://forms.gle/1Xbp9F57MXqiTkP5A'">আবেদন করুন</button>
-            </div>
+                <div class="job-card">
+                    <div class="badge">Serbia</div>
+                    <h3>সার্বিয়া (কোকা-কোলা কোম্পানি)</h3>
+                    <div class="no-video-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <p><strong>পদ:</strong> ইলেকট্রিশিয়ান / হেল্পার</p>
+                    <p><strong>বেতন:</strong> ৫০০ - ৬৫০ ইউরো</p>
+                    <a href="https://forms.gle/1Xbp9F57MXqiTkP5A" class="apply-btn">আবেদন করুন</a>
+                </div>
 
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>যোগাযোগ করুন</h2>
-        <p><i class="fas fa-map-marker-alt"></i> রূপায়ন করিম টাওয়ার (সুইট ১৭/এ), ৮০ কাকরাইল, ঢাকা-১০০০।</p>
-        <p><i class="fas fa-phone"></i> 01970-945555, 01977-935555</p>
-        <div style="margin-top: 20px;">
-            <a href="https://wa.me/8801970945555" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> সরাসরি চ্যাট করুন</a>
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Oparajita Overseas</h3>
+                <p><i class="fas fa-map-marker-alt"></i> রূপায়ন করিম টাওয়ার (সুইট ১৭/এ), ৮০ কাকরাইল, ঢাকা-১০০০।</p>
+                <p><i class="fas fa-phone"></i> 01970-945555, 01977-935555</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/8801970945555" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Oparajita Overseas. All Rights Reserved. | RL-1318</p>
+        <div class="bottom-bar">
+            <p>&copy; 2026 Oparajita Overseas. All Rights Reserved. | RL-1318</p>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -4,100 +4,66 @@
     --whatsapp: #25d366;
     --call: #007bff;
     --white: #ffffff;
+    --bg-light: #f4f7f6;
 }
 
-/* Header Styling */
-nav {
-    background: rgba(0, 31, 63, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
-    border-bottom: 2px solid var(--gold);
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg-light); color: #333; line-height: 1.6; }
+.container { width: 90%; max-width: 1200px; margin: auto; }
+
+/* Navigation */
+nav { background: var(--navy); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: var(--white); font-size: 1.4rem; font-weight: bold; }
+.logo small { display: block; font-size: 0.7rem; color: var(--gold); }
+.nav-links { display: flex; list-style: none; align-items: center; }
+.nav-links li a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+.nav-call-btn { background: var(--gold); color: var(--navy) !important; padding: 8px 15px; border-radius: 50px; font-weight: bold; }
+
+/* Hero Section */
+.hero { padding: 80px 0; background: radial-gradient(circle, #002d5a 0%, #001f3f 100%); color: var(--white); }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.top-tag { border: 1px solid var(--gold); color: var(--gold); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
+.hero-text h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+.highlight { color: var(--gold); }
+.hero-btns { display: flex; gap: 15px; margin-top: 25px; }
+
+/* Buttons */
+.btn { padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; transition: 0.3s; color: white; }
+.call-btn { background: var(--call); }
+.whatsapp-btn { background: var(--whatsapp); }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* Video Containers */
+.video-container, .card-video {
+    position: relative;
+    padding-bottom: 100%; /* Square ratio for reels */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #000;
+}
+.video-container iframe, .card-video iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
-.logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: 1px;
-}
+/* Job Section */
+.jobs-section { padding: 60px 0; }
+.section-title { text-align: center; margin-bottom: 40px; color: var(--navy); font-size: 2rem; }
+.job-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.job-card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--gold); }
+.badge { background: #e74c3c; color: white; padding: 4px 12px; border-radius: 5px; font-size: 0.8rem; display: inline-block; margin-bottom: 10px; }
+.apply-btn { display: block; text-align: center; background: var(--navy); color: white; padding: 10px; margin-top: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; }
 
-.logo small {
-    display: block;
-    font-size: 0.7rem;
-    color: var(--gold);
-    letter-spacing: 2px;
-}
+/* Footer */
+footer { background: #111; color: #ccc; padding: 40px 0 20px; }
+.footer-grid { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.bottom-bar { text-align: center; margin-top: 30px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.8rem; }
 
-.call-now {
-    background: var(--gold);
-    color: var(--navy) !important;
-    padding: 8px 15px;
-    border-radius: 50px;
-    font-weight: bold;
-}
-
-/* Hero Section Enhancements */
-.hero {
-    padding: 100px 0;
-    background: radial-gradient(circle, #002d5a 0%, #001f3f 100%);
-    color: var(--white);
-}
-
-.top-tag {
-    background: rgba(255, 204, 0, 0.1);
-    color: var(--gold);
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    border: 1px solid var(--gold);
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-.hero-text h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.1;
-}
-
-/* Action Buttons */
-.btn {
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.4s ease;
-    border: none;
-}
-
-.call-btn {
-    background: var(--call);
-    color: white;
-}
-
-.whatsapp-btn {
-    background: var(--whatsapp);
-    color: white;
-}
-
-.btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    filter: brightness(1.1);
-}
-
-.btn i {
-    font-size: 1.3rem;
-}
-
-/* Mobile Adjustments */
+/* Mobile View */
 @media (max-width: 768px) {
-    .hero-text h1 { font-size: 2.2rem; }
-    .hero-btns { display: flex; flex-direction: column; gap: 15px; }
-    .btn { width: 100%; justify-content: center; }
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero-btns { flex-direction: column; }
+    .nav-links { display: none; }
 }
