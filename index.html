@@ -9,28 +9,31 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar">
         <div class="container nav-container">
             <div class="logo-area">
                 <div class="site-logo-frame">
                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D166031953084063%26set%3Da.166031956417396&show_text=false&width=500" scrolling="no" frameborder="0"></iframe>
                 </div>
-                <div class="logo-text">Oparajita Overseas <br><small>RL-1318</small></div>
+                <div class="logo-text">
+                    Oparajita Overseas <br><small>Recruiting Agency (RL-1318)</small>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">হোম</a></li>
-                <li><a href="#video-section">ভিডিও</a></li>
-                <li><a href="#photo-section">জব পোস্ট</a></li>
-                <li><a href="tel:+8801970945555" class="nav-call-btn">কল করুন</a></li>
+                <li><a href="#video-section">জব ভিডিও</a></li>
+                <li><a href="#photo-section">সার্কুলার</a></li>
+                <li><a href="tel:+8801970945555" class="nav-call-btn"><i class="fas fa-phone-alt"></i> কল করুন</a></li>
             </ul>
         </div>
     </nav>
 
     <header id="home" class="hero">
         <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="top-tag">গভর্নমেন্ট অনুমোদিত রিক্রুটিং এজেন্সি</span>
-                <h1>আপনার বিদেশ যাত্রার <span class="highlight">বিশ্বস্ত অংশীদার</span></h1>
+            <div class="hero-content">
+                <span class="badge-gold">গভর্নমেন্ট অনুমোদিত রিক্রুটিং এজেন্সি</span>
+                <h1>আপনার বৈদেশিক কর্মসংস্থানের <span class="highlight">বিশ্বস্ত অংশীদার</span></h1>
+                <p>সততা ও স্বচ্ছতার সাথে আমরা আপনার বিদেশ যাত্রার স্বপ্ন পূরণ করি। সকল আপডেট পেতে আমাদের সাথেই থাকুন।</p>
                 <div class="hero-btns">
                     <a href="tel:+8801970945555" class="btn call-btn"><i class="fas fa-phone-alt"></i> কল দিন</a>
                     <a href="https://wa.me/8801970945555" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপ</a>
@@ -41,7 +44,7 @@
 
     <section id="video-section" class="media-section">
         <div class="container">
-            <h2 class="section-title">সফলতার ভিডিও</h2>
+            <h2 class="section-title">চলমান নিয়োগ বিজ্ঞপ্তির ভিডিও</h2>
             <div id="video-list" class="media-grid">
                 </div>
         </div>
@@ -49,7 +52,7 @@
 
     <section id="photo-section" class="media-section light-bg">
         <div class="container">
-            <h2 class="section-title">সাম্প্রতিক জব বিজ্ঞপ্তি</h2>
+            <h2 class="section-title">বর্তমান নিয়োগ বিজ্ঞপ্তিসমূহ</h2>
             <div id="photo-list" class="media-grid">
                 </div>
         </div>
@@ -57,43 +60,58 @@
 
     <footer>
         <div class="container footer-grid">
-            <div>
+            <div class="footer-about">
                 <h3>Oparajita Overseas</h3>
-                <p>রূপায়ন করিম টাওয়ার, ৮০ কাকরাইল, ঢাকা।</p>
+                <p><i class="fas fa-map-marker-alt"></i> রূপায়ন করিম টাওয়ার, ৮০ কাকরাইল, ঢাকা-১০০০।</p>
+                <p><i class="fas fa-phone"></i> 01970-945555, 01977-935555</p>
             </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/oparajitaoverseas/" class="social-id-btn fb-color">ফেসবুক আইডি</a>
+            <div class="footer-links">
+                <p>আমাদের সোশ্যাল মিডিয়া:</p>
+                <a href="https://www.facebook.com/oparajitaoverseas/" target="_blank" class="fb-button">
+                    <i class="fab fa-facebook-f"></i> ফেসবুক পেজ ভিজিট করুন
+                </a>
             </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Oparajita Overseas. RL-1318 | All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // ১. ভিডিও আপডেট করার জায়গা (শুধু লিঙ্ক বসাবেন)
+        // ১. শুধু ভিডিওর লিঙ্কগুলো এখানে বসান (লিঙ্ক শেষে কমা দিতে ভুলবেন না)
         const videos = [
             "https://www.facebook.com/reel/901312212756034/",
             "https://www.facebook.com/reel/1284483833494197/"
         ];
 
-        // ২. ফটোগুলো আপডেট করার জায়গা (শুধু লিঙ্ক বসাবেন)
+        // ২. শুধু ছবির পোস্ট লিঙ্কগুলো এখানে বসান
         const photos = [
             "https://www.facebook.com/oparajitaoverseas/posts/pfbid027c56iBagddcchGjLRVCJ5GfPXWZbK3QthALLSSSdseT4DHKp4oyAAEWuCJiTFfzYl",
             "https://www.facebook.com/oparajitaoverseas/posts/pfbid02LfzMNhSbWxhejp3YMqRBiCHSjEmvyA9KH2KhzWTGYKoYtoD9i3nLNo7z5TjBNEnAl"
         ];
 
-        // অটোমেটিক ডিসপ্লে করার ফাংশন (এটিতে হাত দেওয়ার দরকার নেই)
-        function loadMedia() {
-            const vList = document.getElementById('video-list');
-            const pList = document.getElementById('photo-list');
+        // লোডিং ফাংশন
+        function loadContent() {
+            const vGrid = document.getElementById('video-list');
+            const pGrid = document.getElementById('photo-list');
 
             videos.forEach(link => {
-                vList.innerHTML += `<div class="card"><div class="video-wrapper"><iframe src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(link)}&show_text=false" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></div></div>`;
+                vGrid.innerHTML += `
+                <div class="media-card">
+                    <div class="video-container">
+                        <iframe src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(link)}&show_text=false" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+                    </div>
+                </div>`;
             });
 
             photos.forEach(link => {
-                pList.innerHTML += `<div class="card"><iframe src="https://www.facebook.com/plugins/post.php?href=${encodeURIComponent(link)}&show_text=false" width="100%" height="450" style="border:none;overflow:hidden;border-radius:10px;" scrolling="no" frameborder="0"></iframe></div>`;
+                pGrid.innerHTML += `
+                <div class="media-card">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=${encodeURIComponent(link)}&show_text=false" width="100%" height="450" style="border:none;overflow:hidden;border-radius:12px;" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+                </div>`;
             });
         }
-        loadMedia();
+        window.onload = loadContent;
     </script>
 </body>
 </html>
